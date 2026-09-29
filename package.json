@@ -1,0 +1,72 @@
+{
+  "name": "dsh-time-stop-theme",
+  "version": "1.0.0",
+  "description": "A JoJo-inspired time-stop transition for the DeepSeek Harness light/dark appearance switch. · 为 DSH 明暗外观切换加入时停动效和音效。",
+  "type": "module",
+  "main": "./index.js",
+  "license": "MIT",
+  "author": "Fwkkk666",
+  "homepage": "https://github.com/Fwkkk666/dsh-time-stop-theme#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fwkkk666/dsh-time-stop-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Fwkkk666/dsh-time-stop-theme/issues"
+  },
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "theme",
+    "appearance",
+    "animation",
+    "time-stop"
+  ],
+  "files": [
+    "assets",
+    "lib",
+    "media",
+    "src",
+    "cordis.patch.yml",
+    "index.js",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node --check lib/client.js",
+    "prepack": "npm run build && npm run check"
+  },
+  "engines": {
+    "dsh": ">=0.1.0-rc.7"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-theme",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "directories": {
+    "lib": "lib"
+  }
+}
