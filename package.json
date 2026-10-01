@@ -1,18 +1,18 @@
 {
-  "name": "dsh-time-stop-theme",
-  "version": "1.0.0",
+  "name": "dsh-za-warudo",
+  "version": "1.0.1",
   "description": "A JoJo-inspired time-stop transition for the DeepSeek Harness light/dark appearance switch. · 为 DSH 明暗外观切换加入时停动效和音效。",
   "type": "module",
   "main": "./index.js",
   "license": "MIT",
   "author": "Fwkkk666",
-  "homepage": "https://github.com/Fwkkk666/dsh-time-stop-theme#readme",
+  "homepage": "https://github.com/Fwkkk666/dsh-za-warudo#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Fwkkk666/dsh-time-stop-theme.git"
+    "url": "git+https://github.com/Fwkkk666/dsh-za-warudo.git"
   },
   "bugs": {
-    "url": "https://github.com/Fwkkk666/dsh-time-stop-theme/issues"
+    "url": "https://github.com/Fwkkk666/dsh-za-warudo/issues"
   },
   "keywords": [
     "deepseek",

@@ -69,7 +69,6 @@ export function install(ctx: any, theme: any, require: (id: string) => any) {
     const snapshot = theme.getTheme();
     const current: Scheme = snapshot.active.colorScheme;
     const next: Scheme = current === 'dark' ? 'light' : 'dark';
-    const bounds = button.getBoundingClientRect();
     // A switch acknowledges the click immediately; the scene changes theme later.
     showIntent(next);
     update('playing');
@@ -77,6 +76,7 @@ export function install(ctx: any, theme: any, require: (id: string) => any) {
       if (!matchMedia('(prefers-reduced-motion: reduce)').matches) void effect.resumeAudio().catch(() => {});
       await slideFirst(button);
       if (disposed) return;
+      const bounds = (button.querySelector('.dsh-ts-toggle__switch') ?? button).getBoundingClientRect();
       await effect.play(
         { x: bounds.x + bounds.width / 2, y: bounds.y + bounds.height / 2 },
         () => theme.setTheme(next),
@@ -108,6 +108,6 @@ export function install(ctx: any, theme: any, require: (id: string) => any) {
         React.createElement('span', { className: 'dsh-ts-toggle__thumb' })));
   }
   ctx.slots.inject('sidebar.footer.action', () => ctx.slots.register({
-    name: 'sidebar.footer.action', id: 'time-stop-theme-toggle', order: 90,
+    name: 'sidebar.footer.action', id: 'za-warudo-toggle', order: 90,
   }, ThemeButton));
 }

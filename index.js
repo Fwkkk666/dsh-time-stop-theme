@@ -1,3 +1,3 @@
-export const name = 'dsh-time-stop-theme'
+export const name = 'dsh-za-warudo'
 
 export function apply() {}

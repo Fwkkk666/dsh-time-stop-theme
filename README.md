@@ -1,4 +1,4 @@
-# DSH Time Stop Theme
+# DSH ZA WARUDO
 
 [中文](#中文说明) · [English](#english)
 
@@ -22,13 +22,13 @@
 ### 安装
 
 ```bash
-dsh plugin --profile web add dsh-time-stop-theme
+dsh plugin --profile web add dsh-za-warudo
 ```
 
 如果暂时未发布到 npm，也可以安装 GitHub 预构建版本：
 
 ```bash
-dsh plugin --profile web add github:Fwkkk666/dsh-time-stop-theme
+dsh plugin --profile web add github:Fwkkk666/dsh-za-warudo
 ```
 
 安装后刷新页面；桌面版如果没有自动生效，请重启 Harness。
@@ -36,7 +36,7 @@ dsh plugin --profile web add github:Fwkkk666/dsh-time-stop-theme
 ### 卸载
 
 ```bash
-dsh plugin --profile web remove dsh-time-stop-theme
+dsh plugin --profile web remove dsh-za-warudo
 ```
 
 ### 兼容性
@@ -59,13 +59,13 @@ Adds an Appearance switch to the DeepSeek Harness sidebar. The switch finishes i
 ### Install
 
 ```bash
-dsh plugin --profile web add dsh-time-stop-theme
+dsh plugin --profile web add dsh-za-warudo
 ```
 
 GitHub fallback:
 
 ```bash
-dsh plugin --profile web add github:Fwkkk666/dsh-time-stop-theme
+dsh plugin --profile web add github:Fwkkk666/dsh-za-warudo
 ```
 
 Refresh the page after installation. Restart Harness if a desktop host does not hot-load the plugin.
@@ -73,7 +73,7 @@ Refresh the page after installation. Restart Harness if a desktop host does not 
 ### Uninstall
 
 ```bash
-dsh plugin --profile web remove dsh-time-stop-theme
+dsh plugin --profile web remove dsh-za-warudo
 ```
 
 ## Development
